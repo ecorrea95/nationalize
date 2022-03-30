@@ -32,7 +32,7 @@ function searchCountry() {
   loadCountry(n);
 }
 
-$("#inputName").on('keypress',function(e) {
+$("#inputName").on('keypress', function(e) {
     if(e.which == 13) {
       searchCountry();
     }

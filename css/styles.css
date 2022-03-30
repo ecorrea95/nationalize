@@ -8,3 +8,26 @@
 body {
   background-color: var(--fourth);
 }
+
+h1, h2 {
+  text-align: center;
+}
+
+.container {
+  /* background-color: var(--second); */
+  background: linear-gradient(var(--first), var(--second));
+  width: 90vw;
+  height: 80vh;
+  border-radius: 30% 70% 33% 67% / 39% 53% 47% 61%;
+  margin: auto;
+  text-align: center;
+}
+
+.searchCont {
+  padding-top: 10vh;
+}
+
+.inputName {
+  width: 20vw;
+  height: 3vh;
+}
