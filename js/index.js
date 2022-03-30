@@ -30,3 +30,9 @@ const loadCountry = async (name) => {
     console.error(err)
   }
 };
+
+function searchCountry() {
+  var n = $("#inputName").val();
+  console.log(n);
+  loadCountry(n);
+}
