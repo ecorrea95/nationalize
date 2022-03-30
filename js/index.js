@@ -31,3 +31,9 @@ function searchCountry() {
   var n = $("#inputName").val();
   loadCountry(n);
 }
+
+$("#inputName").on('keypress',function(e) {
+    if(e.which == 13) {
+      searchCountry();
+    }
+});
