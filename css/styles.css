@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 :root {
-  --first: #283739;
-  --second: #2c5d63;
-  --third: #a2c11c;
-  --fourth: #e0e0e0;
+  --first: #5aa24e;
+  --second: #b1d283;
+  --third: #ffffff;
+  --fourth: #a9a9a9;
+  --fifth: #010101;
 }
 
 * {
@@ -19,6 +20,7 @@ body {
 
 h1, h2 {
   text-align: center;
+  display: block;
 }
 
 span {
@@ -28,9 +30,9 @@ span {
 .container {
   padding-top: 10vh;
   background: linear-gradient(var(--first), var(--second));
-  /* width: 80vw; */
+  width: 80vw;
   height: 90vh;
-  /* border-radius: 30% 70% 29% 71% / 66% 30% 70% 34%; */
+  border-radius: 30% 70% 29% 71% / 66% 30% 70% 34%;
   margin: auto;
   text-align: center;
 }
@@ -93,4 +95,45 @@ span {
 
 .dataContainer {
   margin-top: 3vh;
+}
+
+
+
+
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, var(--first) 0%, var(--third) 100%);
+  color: black;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px;
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: white;
 }
