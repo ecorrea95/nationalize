@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 :root {
   --first: #283739;
   --second: #2c5d63;
@@ -5,20 +7,30 @@
   --fourth: #e0e0e0;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: var(--fourth);
+  font-family: 'Quicksand', sans-serif;
 }
 
 h1, h2 {
   text-align: center;
 }
 
+span {
+  font-size: 2.5rem;
+}
+
 .container {
-  /* background-color: var(--second); */
+  padding-top: 10vh;
   background: linear-gradient(var(--first), var(--second));
-  width: 90vw;
-  height: 80vh;
-  border-radius: 30% 70% 33% 67% / 39% 53% 47% 61%;
+  /* width: 80vw; */
+  height: 90vh;
+  /* border-radius: 30% 70% 29% 71% / 66% 30% 70% 34%; */
   margin: auto;
   text-align: center;
 }
@@ -28,6 +40,57 @@ h1, h2 {
 }
 
 .inputName {
-  width: 20vw;
-  height: 3vh;
+  width: 45vw;
+  height: 9vh;
+  background-color: transparent;
+  border: 0;
+  color: var(--third);
+  font-size: 3rem;
+}
+
+.inputName:focus {
+  outline: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--third);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: red;
+}
+
+.submitBtn {
+  color: white;
+  background-color: var(--third);
+  border: 0;
+  border-radius: 40px;
+  width: 12rem;
+  height: 4rem;
+  font-size: 3rem;
+}
+
+.submitBtn:hover {
+  outline: 2px solid white;
+}
+
+.country {
+  display: inline-block;
+  width: 30%;
+  color: white;
+}
+
+.prob {
+  display: inline-block;
+  width: 30%;
+  color: white;
+}
+
+.dataContainer {
+  margin-top: 3vh;
 }

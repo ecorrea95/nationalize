@@ -6,34 +6,37 @@
     <title>Nationalize</title>
   </head>
   <body>
-    <h1>Nationalize</h1>
-    <h2>Insert a name and we will predict the country</h2>
 
     <div class="container">
+      <h1>Nationalize</h1>
+      <h2>Insert a name and predict the nationality</h2>
       <div class="searchCont">
         <input type="text" id="inputName" class="inputName" placeholder="Insert name here...">
-        <input type="submit" onclick="searchCountry()" value="Submit">
+        <input type="submit" onclick="searchCountry()" class="submitBtn" value="Submit">
       </div>
       <!-- Country 1 -->
-      <div class="">
-        <span id="country1"></span>
-        <span id="probab1"></span>
+      <div class="dataContainer">
+        <span id="country1" class="country"></span>
+        <span id="probab1" class="prob"></span>
       </div>
       <!-- Country 2 -->
-      <div class="">
-        <span id="country2"></span>
-        <span id="probab2"></span>
+      <div class="dataContainer">
+        <span id="country2" class="country"></span>
+        <span id="probab2" class="prob"></span>
       </div>
       <!-- Country 3 -->
-      <div class="">
-        <span id="country3"></span>
-        <span id="probab3"></span>
+      <div class="dataContainer">
+        <span id="country3" class="country"></span>
+        <span id="probab3" class="prob"></span>
       </div>
       <!-- Country Others -->
-      <div class="">
-        <span id="countryOther"></span>
-        <span id="probabOther"></span>
+      <div class="dataContainer">
+        <span id="countryOther" class="country"></span>
+        <span id="probabOther" class="prob"></span>
       </div>
+      <svg viewBox="0 0 1440 319">
+        <path fill="#fff" fill-opacity="1" d="M0,32L48,80C96,128,192,224,288,224C384,224,480,128,576,90.7C672,53,768,75,864,96C960,117,1056,139,1152,149.3C1248,160,1344,160,1392,160L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
 
     </div>
 

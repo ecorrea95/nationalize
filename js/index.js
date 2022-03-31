@@ -37,3 +37,5 @@ $("#inputName").on('keypress', function(e) {
       searchCountry();
     }
 });
+
+$("#inputName").focus();
