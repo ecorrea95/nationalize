@@ -1,4 +1,5 @@
 let regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
+let root = document.documentElement;
 
 const loadCountry = async (name) => {
   try {
@@ -17,8 +18,13 @@ const loadCountry = async (name) => {
       var c3 = regionNames.of(data.country[2].country_id);
 
       var p1 = parseFloat(data.country[0].probability*100).toFixed(2);
+      root.style.setProperty('--prob1', p1+"%");
       var p2 = parseFloat(data.country[1].probability*100).toFixed(2);
+      root.style.setProperty('--prob2', p2+"%");
       var p3 = parseFloat(data.country[2].probability*100).toFixed(2);
+      root.style.setProperty('--prob3', p3+"%");
+      var p4 = (100-p1-p2-p3).toFixed(2);
+      root.style.setProperty('--prob4', p4+"%");
 
       $("#contentCenter").removeClass("center");
       $('div[name="dataPrint"]').removeClass("hide");
@@ -31,7 +37,7 @@ const loadCountry = async (name) => {
       document.getElementById("probab2").innerHTML = p2+"%";
       document.getElementById("probab3").innerHTML = p3+"%";
       document.getElementById("countryOther").innerHTML = "Others";
-      document.getElementById("probabOther").innerHTML = (100-p1-p2-p3).toFixed(2)+"%";
+      document.getElementById("probabOther").innerHTML = p4+"%";
     }
   } catch(err) {
     console.error(err)

@@ -6,6 +6,10 @@
   --third: #ffffff;
   --fourth: #a9a9a9;
   --fifth: #010101;
+  --prob1: 0;
+  --prob2: 0;
+  --prob3: 0;
+  --prob4: 0;
 }
 
 * {
@@ -150,14 +154,12 @@ span {
   align-items: center;
   position: relative;
   padding: 0 5px;
-  /* display: flex; */
   height: 40px;
   width: 30vw;
   display: inline-flex;
 }
 
-.progress-value {
-  animation: load 3s normal forwards;
+.progress-value1, .progress-value2, .progress-value3, .progress-value4 {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
   background: #fff;
@@ -165,7 +167,32 @@ span {
   width: 0;
 }
 
-@keyframes load {
+.proggress-value1 {
+  animation: load1 3s normal forwards;
+}
+.proggress-value2 {
+  animation: load2 3s normal forwards;
+}
+.proggress-value3 {
+  animation: load3 3s normal forwards;
+}
+.proggress-value4 {
+  animation: load4 3s normal forwards;
+}
+
+@keyframes load1 {
   0% { width: 0; }
-  100% { width: 48%; }
+  100% { width: var(--prob1); }
+}
+@keyframes load2 {
+  0% { width: 0; }
+  100% { width: var(--prob2); }
+}
+@keyframes load3 {
+  0% { width: 0; }
+  100% { width: var(--prob3); }
+}
+@keyframes load4 {
+  0% { width: 0; }
+  100% { width: var(--prob4); }
 }
