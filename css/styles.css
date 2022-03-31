@@ -143,8 +143,6 @@ span {
   background-color: white;
 }
 
-
-
 .progress {
   background: rgba(255,255,255,0.1);
   justify-content: flex-start;
@@ -152,9 +150,10 @@ span {
   align-items: center;
   position: relative;
   padding: 0 5px;
-  display: flex;
+  /* display: flex; */
   height: 40px;
   width: 30vw;
+  display: inline-flex;
 }
 
 .progress-value {
