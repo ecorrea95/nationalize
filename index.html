@@ -11,7 +11,7 @@
 
       <!-- Title -->
       <div class="inner-header flex">
-        <h1>Nationalize</h1>
+        <h1 class="title">Nationalize</h1>
         <h2>Insert a name and predict the nationality</h2>
 
         <!-- Content -->
@@ -20,21 +20,40 @@
             <input type="text" id="inputName" class="inputName" placeholder="Insert name here...">
             <input type="submit" onclick="searchCountry()" class="submitBtn" value="Submit">
           </div>
+          <!-- Country 1 -->
           <div name="dataPrint" class="dataContainer hide">
             <span id="country1" class="country"></span>
+            <div class="progress">
+              <div class="progress-value"></div>
+            </div>
             <span id="probab1" class="prob"></span>
           </div>
+          <!-- Country 2 -->
           <div name="dataPrint" class="dataContainer hide">
             <span id="country2" class="country"></span>
+            <div class="progress">
+              <div class="progress-value"></div>
+            </div>
             <span id="probab2" class="prob"></span>
           </div>
+          <!-- Country 3 -->
           <div name="dataPrint" class="dataContainer hide">
             <span id="country3" class="country"></span>
+            <div class="progress">
+              <div class="progress-value"></div>
+            </div>
             <span id="probab3" class="prob"></span>
           </div>
+          <!-- Country Other -->
           <div name="dataPrint" class="dataContainer hide">
             <span id="countryOther" class="country"></span>
+            <div class="progress">
+              <div class="progress-value"></div>
+            </div>
             <span id="probabOther" class="prob"></span>
+          </div>
+          <div id="error" class="error hide">
+            <span id="errorMsg" class="errorMsg"></span>
           </div>
         </div>
 

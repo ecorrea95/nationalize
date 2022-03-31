@@ -27,13 +27,22 @@ span {
   font-size: 2.5rem;
 }
 
+.title {
+  padding-top: 5vh;
+  font-size: 4rem;
+}
+
+.subtitle {
+
+}
+
 .hide {
   display: none;
 }
 
 .center {
-  height: 75vh;
-  line-height: 75vh;
+  height: 68vh;
+  line-height: 68vh;
 }
 
 .inputName {
@@ -81,12 +90,14 @@ span {
   display: inline-block;
   width: 30%;
   color: white;
+  text-align: left;
 }
 
 .prob {
   display: inline-block;
-  width: 30%;
+  width: 10%;
   color: white;
+  text-align: right;
 }
 
 .dataContainer {
@@ -101,7 +112,7 @@ span {
 }
 
 .inner-header {
-  height: 75vh;
+  height: 79vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -125,9 +136,37 @@ span {
 
 .content {
   position: absolute;
-  height: 10vh;
+  height: 6vh;
   width: 100vw;
   bottom: 0px;
   text-align: center;
   background-color: white;
+}
+
+
+
+.progress {
+  background: rgba(255,255,255,0.1);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 5px;
+  display: flex;
+  height: 40px;
+  width: 30vw;
+}
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  border-radius: 100px;
+  background: #fff;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  100% { width: 48%; }
 }
