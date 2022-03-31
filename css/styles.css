@@ -27,18 +27,13 @@ span {
   font-size: 2.5rem;
 }
 
-.container {
-  padding-top: 10vh;
-  background: linear-gradient(var(--first), var(--second));
-  width: 80vw;
-  height: 90vh;
-  border-radius: 30% 70% 29% 71% / 66% 30% 70% 34%;
-  margin: auto;
-  text-align: center;
+.hide {
+  display: none;
 }
 
-.searchCont {
-  padding-top: 10vh;
+.center {
+  height: 75vh;
+  line-height: 75vh;
 }
 
 .inputName {
@@ -69,7 +64,7 @@ span {
 
 .submitBtn {
   color: white;
-  background-color: var(--third);
+  background-color: var(--second);
   border: 0;
   border-radius: 40px;
   width: 12rem;
@@ -78,7 +73,8 @@ span {
 }
 
 .submitBtn:hover {
-  outline: 2px solid white;
+  outline: 2px solid var(--first);
+  cursor: pointer;
 }
 
 .country {
@@ -97,10 +93,6 @@ span {
   margin-top: 3vh;
 }
 
-
-
-
-
 .header {
   position:relative;
   text-align:center;
@@ -109,8 +101,8 @@ span {
 }
 
 .inner-header {
-  height:65vh;
-  width:100%;
+  height: 75vh;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -123,17 +115,19 @@ span {
 }
 
 .waves {
-  position:relative;
+  position: relative;
   width: 100%;
-  height:15vh;
-  margin-bottom:-7px;
-  min-height:100px;
-  max-height:150px;
+  height: 15vh;
+  margin-bottom: -7px;
+  min-height: 100px;
+  max-height: 150px;
 }
 
 .content {
-  position:relative;
-  height:20vh;
-  text-align:center;
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+  bottom: 0px;
+  text-align: center;
   background-color: white;
 }

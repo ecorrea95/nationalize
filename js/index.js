@@ -14,6 +14,10 @@ const loadCountry = async (name) => {
     var p2 = parseFloat(data.country[1].probability*100).toFixed(2);
     var p3 = parseFloat(data.country[2].probability*100).toFixed(2);
 
+    $("#contentCenter").removeClass("center");
+    $('div[name="dataPrint"]').removeClass("hide");
+    $("#contentCenter").css("margin-top","10vh");
+
     document.getElementById("country1").innerHTML = c1;
     document.getElementById("country2").innerHTML = c2;
     document.getElementById("country3").innerHTML = c3;

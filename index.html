@@ -15,25 +15,27 @@
         <h2>Insert a name and predict the nationality</h2>
 
         <!-- Content -->
-        <div class="searchCont">
-          <input type="text" id="inputName" class="inputName" placeholder="Insert name here...">
-          <input type="submit" onclick="searchCountry()" class="submitBtn" value="Submit">
-        </div>
-        <div class="dataContainer">
-          <span id="country1" class="country"></span>
-          <span id="probab1" class="prob"></span>
-        </div>
-        <div class="dataContainer">
-          <span id="country2" class="country"></span>
-          <span id="probab2" class="prob"></span>
-        </div>
-        <div class="dataContainer">
-          <span id="country3" class="country"></span>
-          <span id="probab3" class="prob"></span>
-        </div>
-        <div class="dataContainer">
-          <span id="countryOther" class="country"></span>
-          <span id="probabOther" class="prob"></span>
+        <div id="contentCenter" class="center">
+          <div class="searchCont">
+            <input type="text" id="inputName" class="inputName" placeholder="Insert name here...">
+            <input type="submit" onclick="searchCountry()" class="submitBtn" value="Submit">
+          </div>
+          <div name="dataPrint" class="dataContainer hide">
+            <span id="country1" class="country"></span>
+            <span id="probab1" class="prob"></span>
+          </div>
+          <div name="dataPrint" class="dataContainer hide">
+            <span id="country2" class="country"></span>
+            <span id="probab2" class="prob"></span>
+          </div>
+          <div name="dataPrint" class="dataContainer hide">
+            <span id="country3" class="country"></span>
+            <span id="probab3" class="prob"></span>
+          </div>
+          <div name="dataPrint" class="dataContainer hide">
+            <span id="countryOther" class="country"></span>
+            <span id="probabOther" class="prob"></span>
+          </div>
         </div>
 
       </div>
