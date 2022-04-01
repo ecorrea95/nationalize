@@ -97,11 +97,21 @@ span {
   text-align: left;
 }
 
+.countryError {
+  width: 100%;
+  text-align: center;
+}
+
 .prob {
   display: inline-block;
   width: 10%;
   color: white;
   text-align: right;
+}
+
+.probError {
+  width: 100%;
+  text-align: center;
 }
 
 .dataContainer {

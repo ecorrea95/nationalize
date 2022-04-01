@@ -28,11 +28,16 @@ $("#inputName").on('keypress', function(e) {
 $("#inputName").focus();
 
 function printCountry(data) {
-  if (data.country[0].country_id == undefined || data.country[1].country_id == undefined || data.country[2].country_id == undefined) {
+
+  if (data.country.length == 0) {
     // Show msg no countries found
-    $("#errorMsg").text("No countries found for that name");
+    $("#contentCenter").removeClass("center");
     $("#error").removeClass("hide");
+    $('div[name="dataPrint"]').addClass("hide");
+    $("#contentCenter").css("margin-top","10vh");
+
   } else {
+
     // Show data
     var c1 = regionNames.of(data.country[0].country_id);
     var c2 = regionNames.of(data.country[1].country_id);
@@ -51,6 +56,7 @@ function printCountry(data) {
 
     $("#contentCenter").removeClass("center");
     $('div[name="dataPrint"]').removeClass("hide");
+    $("#error").addClass("hide");
     $("#contentCenter").css("margin-top","10vh");
 
     document.getElementById("country1").innerHTML = c1;
