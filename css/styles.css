@@ -170,15 +170,12 @@ span {
   animation: load1 3s normal forwards;
 }
 .progress-value2 {
-  width: var(--prob2);
   animation: load2 3s normal forwards;
 }
 .progress-value3 {
-  width: var(--prob3);
   animation: load3 3s normal forwards;
 }
 .progress-value4 {
-  width: var(--prob4);
   animation: load4 3s normal forwards;
 }
 
