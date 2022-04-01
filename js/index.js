@@ -33,11 +33,42 @@ const loadCountry = async (name) => {
       document.getElementById("country1").innerHTML = c1;
       document.getElementById("country2").innerHTML = c2;
       document.getElementById("country3").innerHTML = c3;
-      document.getElementById("probab1").innerHTML = p1+"%";
-      document.getElementById("probab2").innerHTML = p2+"%";
-      document.getElementById("probab3").innerHTML = p3+"%";
       document.getElementById("countryOther").innerHTML = "Others";
-      document.getElementById("probabOther").innerHTML = p4+"%";
+
+      var probab1 = $('#probab1').text();
+      var probab2 = $('#probab2').text();
+      var probab3 = $('#probab3').text();
+      var probabOther = $('#probabOther').text();
+
+      $({numberValue: probab1}).animate({numberValue: p1}, {
+          duration: 3000,
+          easing: 'linear',
+          step: function() {
+              $('#probab1').text(((this.numberValue*100)/100).toFixed(2)+"%");
+          }
+      });
+      $({numberValue: probab2}).animate({numberValue: p2}, {
+          duration: 3000,
+          easing: 'linear',
+          step: function() {
+              $('#probab2').text(((this.numberValue*100)/100).toFixed(2)+"%");
+          }
+      });
+      $({numberValue: probab3}).animate({numberValue: p3}, {
+          duration: 3000,
+          easing: 'linear',
+          step: function() {
+              $('#probab3').text(((this.numberValue*100)/100).toFixed(2)+"%");
+          }
+      });
+      $({numberValue: probabOther}).animate({numberValue: p4}, {
+          duration: 3000,
+          easing: 'linear',
+          step: function() {
+              $('#probabOther').text(((this.numberValue*100)/100).toFixed(2)+"%");
+          }
+      });
+
     }
   } catch(err) {
     console.error(err)
@@ -56,3 +87,7 @@ $("#inputName").on('keypress', function(e) {
 });
 
 $("#inputName").focus();
+
+function printCountry() {
+
+}

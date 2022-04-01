@@ -6,10 +6,10 @@
   --third: #ffffff;
   --fourth: #a9a9a9;
   --fifth: #010101;
-  --prob1: 0;
-  --prob2: 0;
-  --prob3: 0;
-  --prob4: 0;
+  --prob1: 0%;
+  --prob2: 0%;
+  --prob3: 0%;
+  --prob4: 0%;
 }
 
 * {
@@ -162,21 +162,23 @@ span {
 .progress-value1, .progress-value2, .progress-value3, .progress-value4 {
   box-shadow: 0 10px 40px -10px #fff;
   border-radius: 100px;
-  background: #fff;
+  background: var(--first);
   height: 30px;
-  width: 0;
 }
 
-.proggress-value1 {
+.progress-value1 {
   animation: load1 3s normal forwards;
 }
-.proggress-value2 {
+.progress-value2 {
+  width: var(--prob2);
   animation: load2 3s normal forwards;
 }
-.proggress-value3 {
+.progress-value3 {
+  width: var(--prob3);
   animation: load3 3s normal forwards;
 }
-.proggress-value4 {
+.progress-value4 {
+  width: var(--prob4);
   animation: load4 3s normal forwards;
 }
 
